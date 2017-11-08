@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Domain Search - Domain Name Search &amp; Register</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <link href="ajax-css.css" rel="stylesheet" type="text/css">
+        
+
+    </head>
+    
+    <body class="container"  onload="focus()">
+        <h1>Type your domain name below.</h1>
+        <form action="javascript:get(document.getElementById('myform'));" name="myform" id="myform" class="form-inline">
+            <div class="form-group">
+                <input name="domainname" type="text" class="domainform" onkeyup="javascript:get(this.parentNode);">
+            </div>
+        </form>
+ 
+
+        <div align="center">
+            <!-- Results Display Inside span-->
+            <span name="myspan" id="myspan"></span>
+            <!--End Results Display -->
+            <span class="instruction">
+                <center>Check your domain (.com, .net, .org, .info, .biz, .us).</center>
+            </span>
+        </div>
+    
+    </body>
+</html>
